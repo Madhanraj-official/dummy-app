@@ -1,0 +1,49 @@
+.login {
+    background: url("https://imgs.search.brave.com/sHUAN2ku__TtkzwNPhvXk-mPkSoiYJTvpyfqMINNElU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci85NDkv/OTQ3L0hELXdhbGxw/YXBlci13aW5kb3dz/LXdpbmRvd3MtMTEt/dGh1bWJuYWlsLmpw/Zw") no-repeat center ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    & > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: transparent;
+        backdrop-filter: blur(5px);
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.29);
+        transition: all 0.2s ease-in-out;
+
+        & > input, button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            opacity: 0.5;
+            border: 1px solid transparent;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+        }
+
+        & > input:hover, button:hover {
+            border-color: black;
+            opacity: 1;
+        }
+
+        &:hover{
+            backdrop-filter: blur(10px);
+            border-color: white;
+            transform: scale(1.2);
+        }
+
+
+    }
+}
